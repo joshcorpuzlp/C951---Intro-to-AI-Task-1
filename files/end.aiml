@@ -6,8 +6,16 @@
 	    <template>
 	        Great! I hope I was able to help you in your career goals!<br/>
 	        In any case, I wish you good luck in whatever career you choose to pursue. <br/>
-	        Bye now!<br/>
 	    </template>
+	    <button>
+	        <text>Restart program?</text>
+	        <postback>startprogram</postback>
+	    </button>
+	    <button>
+	        <text>Good bye!</text>
+	        <postback>finalend</postback>
+	    </button>
+	    
 	</category>
 	
 	<category>
@@ -25,5 +33,12 @@
             </button>
         </template>
         
+    </category>
+    
+    <category>
+        <pattern>finalend</pattern>
+        <template>
+            Bye now!
+        </template>
     </category>
 </aiml>
