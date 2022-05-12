@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    
+  <!--Program Start-->
+  <category>
+    <pattern>Hi</pattern>
+    <template>
+        Hello! I am your virtual tech career guide. I can help you figure out which CS Career
+        would be suited for you. Would you like to begin?
+        <button>
+            <text>Yes!</text>
+            <postback>startprogram</postback>
+        </button>
+        <button>
+            <text>No!</text>
+            <postback>restartprogram</postback>
+        </button>
+    </template>
+  </category>
+  
+  <!--Questionnaire Start-->
+  <category>
+      <pattern>startprogram</pattern>
+      <template>
+          Awesome that is great to hear! <br/>
+          Would you like to learn about the various career options for you?
+          Or would you rather I guide you?
+          
+          <button>
+              <text>See career options!</text>
+              <postback>careeroptions</postback>
+          </button>
+          <button>
+              <text>Guide me!</text>
+              <postback>guideme</postback>
+          </button>
+          
+      </template>
+  </category>
+  
+  <!--Carousel of Career Options-->
+  <category>
+      <pattern>careeroptions</pattern>
+      <template>
+          <carousel>
+              <card>
+                  <image>https://www.namasteui.com/wp-content/uploads/2018/08/front-end-web-development.jpg</image>
+                  <title>Front-End Developer</title>
+                  <subtitle></subtitle>
+                  <button>
+                      <text>Learn More</text>
+                      <postback>frontenddev</postback>
+                  </button>
+              </card>
+              
+              <card>
+                  <image>https://codecondo.com/wp-content/uploads/2017/09/back-end-developer.jpg</image>
+                  <title>Back-end Developer</title>
+                  <subtitle></subtitle>
+                  <button>
+                      <text>Learn More</text>
+                      <postback>backenddev</postback>
+                  </button>
+              </card>
+              
+              <card>
+                  <image>https://miro.medium.com/max/700/0*FtUGyX-q-4S1Ybc9</image>
+                  <title>Data Scientist</title>
+                  <subtitle></subtitle>
+                  <button>
+                      <text>Learn More</text>
+                      <postback>datascientist</postback>
+                  </button>
+              </card>
+              
+              <card>
+                  <image>https://www.thebalancecareers.com/thmb/4jKjV1cGS7RrwkxVzaYqeTWe690=/672x0/filters:max_bytes(150000):strip_icc():format(webp)/government-job-profile-project-manager-16696341-711563813bbe4462b35bc54842fe3f6a.png</image>
+                  <title>IT Project Manager</title>
+                  <subtitle></subtitle>
+                  <button>
+                      <text>Learn More</text>
+                      <postback>itprojectmanager</postback>
+                  </button>
+              </card>
+              
+              <card>
+                  <image>https://www.intelsea.com/images/blog/circuit-board-motherboard.jpeg</image>
+                  <title>Embedded Softare Developer</title>
+                  <subtitle></subtitle>
+                  <button>
+                      <text>Learn More</text>
+                      <postback>embeddedsoftware</postback>
+                  </button>
+              </card>
+          </carousel>
+      </template>
+  </category>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--Program restart-->
+  <category>
+      <pattern>restartprogram</pattern>
+      <template>
+          Ok, no worries. Just say "Hi" when you are ready.
+      </template>
+  </category>
+  
+  <!--Error Catcher-->
+  <category>
+      <pattern>*</pattern>
+      <template>
+          Sorry I do not have an answer for that. Try saying "Hi"
+      </template>
+  </category>
+  
+  
+  
+</aiml>

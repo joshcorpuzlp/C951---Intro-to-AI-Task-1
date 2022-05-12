@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+	    <pattern>embeddedsoftware</pattern>
+	    <template>
+	        An embedded systems or software engineer helps design, develop, and maintain embedded systems in products. 
+	        The role often includes software development. But it also requires knowledge of entire embedded systems.
+            <br></br> <br></br>
+            <link>
+                <text> Click here to learn more about Embedded Software Engineers</text>
+                <url>https://www.qt.io/embedded-development-talk/embedded-engineers-roles-responsibilities-and-job-descriptions#:~:text=An%20embedded%20systems%20or%20software,it%20can%20vary%20by%20organization.</url>
+            </link>
+            <button>
+                <text>Click here to explore all careers.</text>
+                <postback>careeroptions</postback>
+            </button>
+             <button>
+                <text>Click here if you would like further guidance</text>
+                <postback>guideme</postback>
+            </button>
+            <button>
+                <text>Done</text>
+                <postback>end</postback>
+            </button>
+        </template>
+    </category>
+</aiml>

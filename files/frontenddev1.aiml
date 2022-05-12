@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+	    <pattern>frontenddev</pattern>
+	    <template>
+	        Front end developers are computer programmers who specialize in website design. 
+	        Front end developer duties include determining the structure and design of web pages, 
+	        striking a balance between functional and aesthetic design, and ensuring web design is optimized for smartphones.
+            <br></br> <br></br>
+            <link>
+                <text> Click here to learn more about Front-End Developers.</text>
+                <url>https://www.codecademy.com/resources/blog/what-does-a-front-end-developer-do/</url>
+            </link>
+            <button>
+                <text>Click here to explore all careers.</text>
+                <postback>careeroptions</postback>
+            </button>
+             <button>
+                <text>Click here if you would like further guidance</text>
+                <postback>guideme</postback>
+            </button>
+            <button>
+                <text>Done</text>
+                <postback>end</postback>
+            </button>
+        </template>
+    </category>
+</aiml>

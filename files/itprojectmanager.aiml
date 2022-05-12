@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+	    <pattern>itprojectmanager</pattern>
+	    <template>
+	        An IT Project Manager, or Information Technology Project Manager, plans, organizes and implements a company or client’s technical projects. 
+	        Their main duties include coordinating production releases and roll-outs, 
+	        delegating tasks to the necessary employees and presenting on projects’ progress and results.
+            <br></br> <br></br>
+            <link>
+                <text> Click here to learn more about IT Project Managers</text>
+                <url>https://www.indeed.com/hire/job-description/it-project-manager#:~:text=An%20IT%20Project%20Manager%2C%20or,on%20projects%27%20progress%20and%20results</url>
+            </link>
+            <button>
+                <text>Click here to explore all careers.</text>
+                <postback>careeroptions</postback>
+            </button>
+             <button>
+                <text>Click here if you would like further guidance</text>
+                <postback>guideme</postback>
+            </button>
+            <button>
+                <text>Done</text>
+                <postback>end</postback>
+            </button>
+        </template>
+    </category>
+</aiml>

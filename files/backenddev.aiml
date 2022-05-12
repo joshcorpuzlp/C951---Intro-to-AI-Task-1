@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+	    <pattern>backenddev</pattern>
+	    <template>
+	        The back end developer is a programmer who creates components and features on the server-side, 
+	        indirectly accessed by a user through a front end application or system. 
+	        These developers are tasked with creating, maintaining, testing, and debugging the entire back end.
+            <br></br> <br></br>
+            <link>
+                <text> Click here to learn more about Back-End Developers.</text>
+                <url>https://www.codecademy.com/resources/blog/what-does-a-back-end-developer-do/</url>
+            </link>
+            <button>
+                <text>Click here to explore all careers.</text>
+                <postback>careeroptions</postback>
+            </button>
+             <button>
+                <text>Click here if you would like further guidance</text>
+                <postback>guideme</postback>
+            </button>
+            <button>
+                <text>Done</text>
+                <postback>end</postback>
+            </button>
+        </template>
+    </category>
+</aiml>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+    
+    <category>
+        <pattern>guideme</pattern>
+        <template>
+            Ok, so I will ask you a series of questions which will help me suggest a career for you. <br/>
+            Would you like to start?
+            <button>
+                <text>Yes</text>
+                <postback>frontendquestion</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>restartprogram</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>frontendquestion</pattern>
+        <template>
+            Do you like art and/or design?
+                <button>
+                <text>Yes</text>
+                <postback>frontenddev</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>backenddevquestion</postback>
+            </button>
+        </template>
+        
+    </category>
+    
+    <category>
+        <pattern>backenddevquestion</pattern>
+        <template>
+            Do you like solving puzzles and problems?
+            <button>
+                <text>Yes</text>
+                <postback>backenddev</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>datascientistquestion</postback>
+            </button>
+        </template>
+        
+    </category>
+    
+    <category>
+        <pattern>datascientistquestion</pattern>
+        <template>
+            Do you like math and analyzing data?
+                <button>
+                <text>Yes</text>
+                <postback>datascientist</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>itprojectmanagerquestion</postback>
+            </button>
+        </template>
+        
+    </category>
+    
+    <category>
+        <pattern>itprojectmanagerquestion</pattern>
+        <template>
+            Maybe you prefer a more leadership/managerial role?
+                <button>
+                <text>Yes</text>
+                <postback>itprojectmanager</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>embeddedsoftwarequestion</postback>
+            </button>
+        </template>
+        
+    </category>
+    
+    <category>
+        <pattern>embeddedsoftwarequestion</pattern>
+        <template>
+            Hmm, do you like tinkering with gizmos and gadgets?
+                <button>
+                <text>Yes</text>
+                <postback>embeddedsoftware</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>lastend</postback>
+            </button>
+        </template>
+        
+    </category>
+    
+    
+
+</aiml>

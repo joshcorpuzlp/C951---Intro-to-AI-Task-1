@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+	    <pattern>datascientist</pattern>
+	    <template>
+	        A data scientist is someone who makes value out of data. 
+	        Such a person proactively fetches information from various sources and analyzes it for better understanding 
+	        about how the business performs, and to build AI tools that automate certain processes within the company.
+            <br></br> <br></br>
+            <link>
+                <text> Click here to learn more about Data Scientists.</text>
+                <url>https://datasciencedegree.wisconsin.edu/data-science/what-do-data-scientists-do/#:~:text=%E2%80%9CMore%20generally%2C%20a%20data%20scientist,because%20data%20is%20never%20clean.</url>
+            </link>
+            <button>
+                <text>Click here to explore all careers.</text>
+                <postback>careeroptions</postback>
+            </button>
+             <button>
+                <text>Click here if you would like further guidance</text>
+                <postback>guideme</postback>
+            </button>
+            <button>
+                <text>Done</text>
+                <postback>end</postback>
+            </button>
+        </template>
+    </category>
+</aiml>
